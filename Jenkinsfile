@@ -5,7 +5,7 @@ pipeline {
       string(name: 'GREETING', defaultValue: 'Hello', description: 'How shall we greet?')
     }
     triggers {
-        cron('* * * * *')
+        //cron('* * * * *')
         parameterizedCron('''
 # leave spaces where you want them around the parameters. They'll be trimmed.
 # we let the build run with the default name
