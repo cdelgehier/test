@@ -9,8 +9,8 @@ pipeline {
         parameterizedCron('''
 # leave spaces where you want them around the parameters. They'll be trimmed.
 # we let the build run with the default name
-*/2 * * * * %GREETING=Hola;PLANET=Pluto
-*/3 * * * * %PLANET=Mars
+0 12 * * 2 %GREETING=Hola;PLANET=Pluto
+5 12 * * 2 %PLANET=Mars
         ''')
     }
     stages {
